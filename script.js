@@ -17,14 +17,12 @@ function getComputerChoice() {
     computerChoice = choices[2];
   } else "invalid input";
 
-  console.log("Computer choice: ", computerChoice);
   return computerChoice;
 }
 
 optionBtn.forEach((btn) =>
   btn.addEventListener("click", () => {
     let humanChoice = btn.innerText.toLowerCase();
-    console.log(`Human Choice: ${humanChoice}`);
 
     if (gameRound <= 5) {
       gameRound++;
